@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container mt-3">      
+        <button type="button" class="btn btn-success btn-lg btn_add_employee">
+            Shto
+        </button> 
+
+        <table class="table" id="myinfo">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Emri</th>
+                <th>Mbiemri</th>
+                <th>Roli</th>
+                <th>Bilanci</th>
+                <th> </th>
+
+              </tr>
+            </thead>
+            <tbody class="table_employee_container">
+              
+
+            </tbody>
+          </table>
+    </div>
+
+    <div class="modal" id="modal_add_employee">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Shkruaj Te Dhenat</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row align-items-center mb-2">
+                        <div class="col-4">
+                            Id:
+                        </div>
+                        <div class="col-8">
+                             <input id="input_employee_id" class="form-control" type="number" maxlength="10" placeholder="1171429957">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-4">
+                            Emri:
+                        </div>
+                        <div class="col-8">
+                             <input id="input_employee_name" class="form-control" type="text" maxlength="10" >
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-4">
+                                Mbiemri:
+                        </div>
+                        <div class="col-8">
+                             <input id="input_employee_surname" class="form-control" type="text" maxlength="10" >
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2 fluid">
+                        <div class="col-4">
+                            Roli:
+                        </div>
+                        <div class="col-8">
+                             <select id="select_employee_role" class="form-control">
+                                 <option value="owner">Shef</option>
+                                 <option value="employee">Puntore</option>
+                             </select>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-4">
+                            Bilanci:
+                        </div>
+                        <div class="col-8">
+                             <input id="input_employee_balance" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <input  id="employee_id">
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn_save_employee">Ruaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+      
+<script src="js/script.js"></script>
+</body>
+</html>
