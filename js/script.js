@@ -33,7 +33,7 @@ $(function(){
                 <td class="employee_name_`+id+`">`+name+`</td>
                 <td  class="employee_surname_`+id+`">`+surname+`</td>
                 <td>`+role_text+`</td>
-                <td class="employee_balance_`+id+`">`+bilance+`</td>
+                <td class="employee_balance_`+id+`">`+bilance+"€"+`</td>
                 <td class='editBtn' data-id="`+id+`"><i class="fas fa-user-edit"></i></td>
     
             </tr>`
@@ -58,7 +58,7 @@ $(function(){
         var surname = $('.employee_surname_'+id).text()
         var bilance = $('.employee_balance_'+id).text();
 
-        $('#input_employee_id').val(id);
+        $('#input_employee_'+id).val(id);
         $('#input_employee_name').val(name);
         $('#input_employee_surname').val(surname);
         $('#input_employee_balance').val(bilance);
